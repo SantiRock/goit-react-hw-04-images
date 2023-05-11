@@ -30,7 +30,7 @@ GalleryItem.propTypes = {
     onclickImage: PropTypes.func,
 };
 
-Gallery.prototype = {
+Gallery.propTypes = {
     images: PropTypes.array,
     onclickImage: PropTypes.func,
 }

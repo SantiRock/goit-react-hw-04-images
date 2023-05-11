@@ -13,7 +13,7 @@ const Button = ({onclick}) => {
     )
 }
 
-Button.prototype = {
+Button.propTypes = {
   onclick: PropTypes.func,
 }
 

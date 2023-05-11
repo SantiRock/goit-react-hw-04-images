@@ -75,24 +75,13 @@ const App = () => {
     } 
   }
 
-  const escape = () => {
-    document.addEventListener('keydown', event => {
-        if (event.key === 'Escape') {
-          setShowModal(false)
-        }
-      });   
-  }
-
-  const onclickmodal = (e) => {
-    if (e.currentTarget === e.target) {
-      setShowModal(false)
-    }
-  }
-
   const onclickImage = (image) => {
     setModalImage(image)
     setShowModal(true)
-    escape()
+  }
+
+  const onclickmodal = () => {
+    setShowModal(false)
   }
 
   useEffect(() => {

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const Searchbar = ({onSubmit, keyword, onChange}) => {
     return (
         <header className='Searchbar'>
@@ -19,5 +21,11 @@ const Searchbar = ({onSubmit, keyword, onChange}) => {
         </header>
     )
 }
+
+Searchbar.propTypes = {
+    keyword: PropTypes.string,
+    onChange: PropTypes.func,
+    onSubmit: PropTypes.func
+  }
 
 export default Searchbar

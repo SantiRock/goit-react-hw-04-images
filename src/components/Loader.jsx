@@ -10,7 +10,7 @@ const Loader = ({visible}) => {
     )
   }
 
-  Loader.prototype = {
+  Loader.propTypes = {
     onclick: PropTypes.bool,
   }
 
